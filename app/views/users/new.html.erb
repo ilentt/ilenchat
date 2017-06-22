@@ -1,4 +1,5 @@
 <h1>Sign up</h1>
+<div class="form-group row">
 <%= form_for @user do |f| %>
 	<% if @user.errors.size > 0 %>
 		<div class="alert alert-danger" role="alert">
@@ -7,15 +8,16 @@
 	<% end %>
 	<div class="form-group">
 		<%= f.label :name %>
-		<%= f.text_field :name, class: "form-group" %>
+		<%= f.text_field :name, class: "form-control", placeholder: "User name" %>
 	</div>
 	<div class="form-group">
 		<%= f.label :email %>
-		<%= f.text_field :email, class: "form-group" %>
+		<%= f.text_field :email, class: "form-control", placeholder: "Email" %>
 	</div>
 	<div class="form-group">
 		<%= f.label :password %>
-		<%= f.password_field :password, class: "form-group" %>
+		<%= f.password_field :password, class: "form-control", placeholder: "Password" %>
 	</div>
-	<%= f.submit %>
+	<%= f.submit nil, :class => 'btn btn-primary' %>
 <% end %>
+</div>

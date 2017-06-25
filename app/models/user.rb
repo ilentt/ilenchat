@@ -4,4 +4,7 @@ class User < ApplicationRecord
 	#def password=(value)
 	#	self.password_digest = Encypter.encrypt(value)
 	#end
+	def to_s
+		email
+	end
 end

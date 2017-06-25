@@ -6,7 +6,7 @@ Submitted by: **I Len**
 
 Time spent: **6.5** hours
 
-URL: **[ILen's Chat](https://ilenchat.herokuapp.com/)]**
+URL: **[ILen's Chat](https://ilenchat.herokuapp.com/)**
 
 ## User Stories
 

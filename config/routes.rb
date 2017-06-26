@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :messages
 	resources :users
 	resources :sessions, only: [:new , :create]
 	get 'home/index'
